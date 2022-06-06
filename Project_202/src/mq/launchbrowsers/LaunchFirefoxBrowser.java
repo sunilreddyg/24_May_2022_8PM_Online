@@ -2,9 +2,11 @@ package launchbrowsers;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LaunchFirefoxBrowser {
+public class LaunchFirefoxBrowser 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 		/*
 		 * Download geckodriver.exe file
@@ -34,6 +36,8 @@ public class LaunchFirefoxBrowser {
 		
 		//load webpage to automation browser window
 		firefox.get("http://gmail.com");
+		
+		
 
 	}
 
