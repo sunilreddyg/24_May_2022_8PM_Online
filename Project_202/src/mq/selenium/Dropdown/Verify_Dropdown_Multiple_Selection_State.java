@@ -19,7 +19,7 @@ public class Verify_Dropdown_Multiple_Selection_State {
 		
 		
 		WebElement Select_Menu_Link=driver.findElement(By.xpath("//button[contains(.,'Select Menu')]"));
-		Select_Menu_Link.click();
+		Select_Menu_Link.clear();
 		Thread.sleep(3000);
 		
 		
