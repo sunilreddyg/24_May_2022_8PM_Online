@@ -3,6 +3,9 @@ package pageobjects.Testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import pageobjects.pages.HRM_Login;
 
 public class Run_HRM_Admin_Login 
 {
@@ -15,11 +18,21 @@ public class Run_HRM_Admin_Login
 		driver.manage().window().maximize();
 		
 		
+		HRM_Login login=PageFactory.initElements(driver, HRM_Login.class);
 		
-		
+		/*
+		 * login.Admin_userid.sendKeys("Admin");
+		 * login.Admin_password.sendKeys("admin123"); 
+		 * login.login_button.click();
+		 */
 	
+		/*
+		 * login.enterusername("admin"); 
+		 * login.enterpassword("admin123");
+		 * login.clickloginbutton();
+		 */		
 		
-		
+		login.adminlogin("admin", "admin123");
 
 	}
 

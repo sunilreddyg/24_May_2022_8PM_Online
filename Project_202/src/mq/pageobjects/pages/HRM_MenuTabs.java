@@ -4,7 +4,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebElement;
 
 
-public class HRM_MenuTabs{
+public class HRM_MenuTabs
+{
 
 
 @FindBy(xpath = "//span[contains(.,'Admin')]")
@@ -39,7 +40,6 @@ public WebElement  buzz;
 
 @FindBy(xpath = "(//span[contains(.,'Leave')])[1]")
 public WebElement  leave;
-
 
 
 }

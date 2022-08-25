@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class HRM_Login 
 {
 	
-	@FindBy(name = "username") public WebElement Admin_userid;
+	@FindBy(xpath = "//input[@placeholder='Username']") public WebElement Admin_userid;
 	@FindBy(xpath = "//input[@name='password']") public WebElement Admin_password;
 	@FindBy(xpath = "//button[contains(.,'Login')]") public WebElement login_button;
 	@FindBy(xpath = "//p[contains(.,'Forgot your password?')]") public WebElement Forgot_password_link;
